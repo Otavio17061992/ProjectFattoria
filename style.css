@@ -1,0 +1,260 @@
+/* rooot variaveis */
+
+
+:root {
+    --prime-color: #692FA5;
+    --alfa-color:#656565;
+    --beta-color:#232323;
+    --titles-color:#333333;
+    --body-color:#FFF;
+}
+
+
+
+
+
+
+/* Gerais */
+
+body,html {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+.row {
+    margin: 0;
+}
+
+
+.container {
+    padding: 70px 0;
+}
+
+
+p {
+
+    color: var(--alfa-color);
+}
+h2,h4 {
+    color: var(--titles-color) 
+}
+
+
+/* Barra de Navegação */
+
+
+
+
+header, .navbar {
+    background-color: var(--body-color);
+}
+
+.container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 50px;
+}
+.navbar-nav {
+    margin-left: 20em;
+}
+
+.div-nav-band-parent {
+    padding-left: 5em;
+}
+
+
+
+
+/*  banner  */
+
+.ground-img {
+    background: url(./img/universo.png);
+    height: 510px;
+}
+
+
+body .banner  {
+    padding: 0;
+    margin: 0;
+}
+
+.banner .banner-child {
+    padding: 0;
+}
+
+.banner {
+    margin-bottom: 49px;
+}
+
+.banner .background{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.div-singlo-img {
+    position: absolute;
+    top: 278px;
+    left: 15%;
+}
+
+
+/* Section Produtos */
+
+
+.div-servico-texto,.div-diferencial-texto {
+    text-align: center;
+}
+
+
+main .container-servicos1{
+    padding: 0;
+    margin-top: 49px;
+    
+}
+
+.container-servicos1 .div-produtos {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        
+}
+
+.div-produtos .div-pc-mobile {
+    margin-left: 15px;
+   box-shadow: 4px #656565;
+
+}
+
+.card-body {
+    margin-top: 27px;
+}
+
+
+
+.diferencial-container {
+    margin-top: 49px;
+    
+}
+
+.div-pc-mobile .card {
+    border-radius: 0 0 20px 20px;
+    border: solid 1px var(--body-color); 
+    box-shadow: 1px 1px 1px 1px rgb(247, 245, 245)
+}
+
+.container .card-body {
+    margin-top: 0;
+}
+
+.main > img {
+    border-bottom: solid 5px var(--prime-color);
+}
+
+
+
+.conteiner-diferencial .diferencial-conteudo {
+    margin: 0;
+   
+}
+
+/* pesonas */
+
+.pesonas-container {
+    margin-top: 49px;
+}
+
+
+
+
+/* foooter */
+
+
+
+
+.div-celular {
+    background-image: url(./img/celular.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 430px;
+    top: -40px ;
+    display: inline;
+    margin-left: 50px;
+    
+}
+
+.div-footer
+{
+    /* height: 320px; */
+    position: relative;
+    background: #692FA5!important;
+}
+
+
+.parent-carousel {
+    margin-bottom: 139px;
+}
+
+
+.celular-paragrafo, .celular-titulo {
+    color: var(--body-color);
+}
+
+footer {
+    background-color: var(--prime-color) ;
+    height: 390px;
+    /* overflow: hidden; */
+    
+    
+}
+
+
+/*  mobile  */
+
+.container-mobile {
+    background-image: url(./img/universo.png);
+    padding: 30px 15px 30px 15px;
+    background-repeat: no-repeat;
+}
+
+.container-mobile > .container {
+    padding: 0;
+}
+
+
+/* media */
+
+
+@media  (max-width: 820px){
+    .ground-img, .background,
+    .div-texto-celular,
+    .div-celular ,
+    .div-singlo-img,
+    .banner {
+        display: none;
+    }
+
+    .container-servicos1 .div-produtos {
+        overflow-x: scroll;
+    }
+    
+   
+   
+}
+
+@media (min-width: 820px) {
+    .container-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 950px) {
+    .container-servicos1 .div-produtos {
+        overflow-x: scroll;
+    }
+}
