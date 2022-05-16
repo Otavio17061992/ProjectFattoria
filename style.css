@@ -7,6 +7,7 @@
     --beta-color:#232323;
     --titles-color:#333333;
     --body-color:#FFF;
+    --banner-color:#F3f3f3;
 }
 
 
@@ -36,13 +37,26 @@ p {
 
     color: var(--alfa-color);
 }
+
+h1 {
+    font-weight: bold;
+}
+
 h2,h4 {
     color: var(--titles-color) 
 }
 
+.h2title {
+    color: var(--prime-color);
+    font-weight: 800;
+}
 
 /* Barra de Navegação */
 
+.navbar-nav a:hover {
+    color: var(--prime-color);
+    text-decoration: underline;
+}
 
 
 
@@ -54,6 +68,7 @@ header .navbar-light .navbar-brand {
     color: var(--prime-color);
     font-weight: 900;
     font-size: 28px;
+    margin-left: 48%;
 }
 
 .container {
@@ -77,11 +92,25 @@ header .navbar-light .navbar-brand {
 
 /*  banner  */
 
-.ground-img {
-    background: url(./img/universo.png);
-    height: 510px;
+
+.banner-left {
+    background-color: var(--banner-color);
 }
 
+
+.background{
+    background: url(./img/universo.png);
+    height: 537px;
+}
+
+.textoAmissao {
+    margin-top: 160px;
+    margin-left: 40%;
+}
+
+.divtexto {
+    margin-top: 59px;
+}
 
 body .banner  {
     padding: 0;
@@ -106,6 +135,16 @@ body .banner  {
     position: absolute;
     top: 278px;
     left: 10vw;
+    animation: move 1s infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(20px)
+    }
+    to {
+        transform: translateY(-20px)
+    }
 }
 
 
@@ -127,6 +166,7 @@ main .container-servicos1{
         margin: 0;
         padding: 0;
         display: flex;
+        margin-top: 30px;
         
 }
 
@@ -165,6 +205,7 @@ main .container-servicos1{
 
 .conteiner-diferencial .diferencial-conteudo {
     margin: 0;
+    margin-top: 30px;
    
 }
 
@@ -172,6 +213,22 @@ main .container-servicos1{
 
 .pesonas-container {
     margin-top: 49px;
+}
+
+/* Owl-Carousel */
+
+.owl-item {
+    background-color: #F3F3F3;
+    padding: 20px;
+    border-radius: 20px;
+    height: 183px;
+}
+.owl-item .div-fulano {
+    display: flex;
+}
+
+.owl-item .div-fulano-children {
+    margin-left: 20px;
 }
 
 
@@ -194,8 +251,8 @@ main .container-servicos1{
     background-repeat: no-repeat;
     position: absolute;
     width: 400px;
-    height: 430px;
-    top: -40px ;
+    height: 445px;
+    top: -55px;
     display: inline;
     margin-left: 50px;
     
@@ -208,15 +265,27 @@ main .container-servicos1{
     background: #692FA5!important;
 }
 
+.owl-theme .owl-dots .owl-dot span {
+    background: var(--prime-color);
+}
 
 .parent-carousel {
     margin-bottom: 139px;
+    margin-top: 30px;
 }
 
+.div-conteudo .emojidiv {
+        margin-right: 20px;
+}
 
 .celular-paragrafo, .celular-titulo {
     color: var(--body-color);
 }
+
+.celular-paragrafo {
+    margin-top: 20px;
+}
+
 
 footer {
     background-color: var(--prime-color) ;
@@ -233,6 +302,8 @@ footer {
     background-image: url(./img/universo.png);
     padding: 30px 15px 30px 15px;
     background-repeat: no-repeat;
+    margin-top: 60px;
+    
 }
 
 .container-mobile > .container {
@@ -250,12 +321,16 @@ header .navbar-light .navbar-toggler span{
     padding: 21px;
 }
 
+.divTextMobile {
+    padding-top: 30px;
+}
+
 
 /* media */
 
 
-@media  (max-width: 820px){
-    .ground-img, .background,
+@media  (max-width: 992px){
+    
     .div-texto-celular,
     .div-celular ,
     .div-singlo-img,
@@ -271,11 +346,15 @@ header .navbar-light .navbar-toggler span{
    
 }
 
-@media (min-width: 820px) {
+@media (min-width: 992px) {
     .container-mobile {
         display: none;
     }
-   
+    .divTextMobile {
+        display: none;
+    }
+
+    
 }
 
 @media (max-width: 950px) {

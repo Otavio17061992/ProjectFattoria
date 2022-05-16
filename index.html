@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="/style.css">
         
         <!-- Owlcarousel -->
+        <link rel="stylesheet" href="./lib/owlCaroseul/dist/assets/owl.theme.default.min.css">
         <!-- boootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="./lib/owlCaroseul/dist/assets/owl.carousel.min.css">
@@ -18,7 +19,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </head>
     <body >
-        <header class=" sticky-top ">
+        <header class="fixed-top">
                 <nav class="navbar navbar-expand-sm navbar-light bg-white">
                   <div class="container div-nav-brand-parent bg-white justify-content  ">  
                     <div class="div-nav-brand" > 
@@ -32,13 +33,13 @@
                     <div class="collapse navbar-collapse justify-content-end " id="collapsibleNavId">
                         <ul class="navbar-nav mr mt-2 mt-lg-0">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Servicos <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#Serviços">Serviços <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Diferenciais <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#Diferenciais">Diferenciais <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Personas</a>
+                                <a class="nav-link" href="#Personas">Personas</a>
                             </li>
                         </ul>
                     </div>
@@ -74,19 +75,21 @@
             <div class="d-flex banner-child container-fluid">
                 <div class="banner-left  justify-content-end row  ">
                 
-                    <div class="col-8 offset-md-3   ">
-                            <div class="row ">
-                                <div class="container col-sm-9 ">
-                                    <h2>
+                    <div class="">
+                            <div class="textoAmissao ">
+                                <div class="col-9">
+                                    <h2 class="h2title">
                                     Teste de Admissão
                                     </h2>
                                     <h1>
                                     Bannerestático
                                     </h1>
-                                    <p>
+                                    <div class="divtexto">
+                                    <p class="text-left">
                                     printer took a galley of type and scrambled it to make a type specimen book.
                                     It has survived not only five centuries, but also the leap into electronicLorem Ipsum
                                     </p>
+                                    </div>
                                     <div class=" div-img-xicara ">
                                         <img src="./img/Group 5.png" class="img-xicara'" alt="">
                                     </div>
@@ -110,7 +113,7 @@
             <div class="container container-servicos1">
                 <div class="d-flex justify-content-center ">
                 <div class="div-servico-texto ">
-                    <h2 class="card-title">Serviçoes</h2>
+                    <h2 class="card-title" id="Serviços">Serviços</h2>
                     <p class="card-text">
                         Lorem Ipsum is simply typesetting industry.
                     </p>
@@ -165,13 +168,13 @@
                 <div class="container diferencial-container ">
                         <div class="d-flex justify-content-center">
                             <div class="div-diferencial-texto" >
-                            <h2>Diferenciais</h2>
+                            <h2 id="Diferenciais">Diferenciais</h2>
                             <p>Lorem Ipsum is simply typesetting industry</p>
                             </div>
                         </div>    
                         <div class="container conteiner-diferencial">
                             <div class="container justify-content-center diferencial-conteudo row">
-                                    <div class="col-sm">
+                                    <div class="col-sm col-md-4">
                                         <div class="text-center">
                                             <img src="./img/ixicara.png"  class="rounded"  alt="">
                                         </div>
@@ -180,14 +183,14 @@
                                                 Café
                                             </h3>
                                         </div>
-                                        <div class="container">
-                                            <p class="text-center ">
+                                        <div class="">
+                                            <p class="text-center">
                                                 Lorem Ipsum is simply typesetting industry. Lorem Ipsum has been the industry's
                                                 standard dummy text ever since the 1500s, when an unknown
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-sm">
+                                    <div class="col-sm col-md-4">
                                         <div class="text-center">
                                             <img src="./img/imoedas.png" class="rounded"  alt="">
                                         </div>
@@ -196,14 +199,14 @@
                                                 Moedas
                                             </h3>
                                         </div>
-                                        <div class="container">
+                                        <div class="">
                                             <p class="text-center">
                                                 Lorem Ipsum is simply typesetting industry. Lorem Ipsum has been the industry's
                                                 standard dummy text ever since the 1500s, when an unknown
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-sm">
+                                    <div class="col-sm col-md-4">
                                         <div class="text-center">
                                             <img src="./img/ipessoas.png" class="rounded" alt="">
                                         </div>
@@ -212,7 +215,7 @@
                                                 Ambiente
                                             </h3>
                                         </div>
-                                        <div class="container">
+                                        <div class="">
                                             <p class="text-center">
                                                 Lorem Ipsum is simply typesetting industry. Lorem Ipsum has been the industry's
                                                 standard dummy text ever since the 1500s, when an unknown
@@ -227,7 +230,7 @@
                      <div class="container ">
                     <div class="d-flex justify-content-center ">
                     <div class="div-diferencial-texto">
-                        <h2>Personas</h2>
+                        <h2 id="Personas">Personas</h2>
                         <p>
                             Lorem Ipsum is simply typesetting industry. 
                         </p>
@@ -236,13 +239,13 @@
                     <div class="container parent-carousel">
                         <div class="carrosoul  owl-carousel owl-theme">
                             <div class="item" >
-                            <div  >
-                                <p> Lorem Ipsum is simply typesetting industry. Lorem Ipsum </p> 
-                                <div>
-                                        <div class="container">
+                            <div class="text-sm-left" >
+                                <p class="text-sm-left"> Lorem Ipsum is simply typesetting industry. Lorem Ipsum </p> 
+                                <div class="div-fulano">
+                                        <div class="">
                                             <img src="./img/ipessoas.png"  " alt="">
                                         </div>
-                                        <div>
+                                        <div class="div-fulano-children">
                                             <h3>Fulano</h3>
                                             <p>Funcionario</p>
                                         </div>
@@ -252,11 +255,11 @@
                             <div class="item">
                             <div >
                                 <p> Lorem Ipsum is simply typesetting industry. Lorem Ipsum </p> 
-                                <div>
+                                <div class="div-fulano">
                                     <div>
                                         <img src="./img/ipessoas.png" alt="">
                                     </div>
-                                    <div>
+                                    <div class="div-fulano-children">
                                         <h3>Fulano</h3>
                                         <p>Funcionario</p>
                                     </div>
@@ -266,11 +269,11 @@
                             <div class="item">
                             <div >
                                 <p> Lorem Ipsum is simply typesetting industry. Lorem Ipsum </p> 
-                                <div>
+                                <div class="div-fulano">
                                     <div>
                                         <img src="./img/ipessoas.png" alt="">
                                     </div>
-                                    <div>
+                                    <div class="div-fulano-children ">
                                         <h3>Fulano</h3>
                                         <p>Funcionario</p>
                                     </div>
@@ -280,11 +283,11 @@
                             <div class="item">
                             <div >
                                 <p> Lorem Ipsum is simply typesetting industry. Lorem Ipsum </p> 
-                                <div>
+                                <div class="div-fulano">
                                     <div>
                                         <img src="./img/ipessoas.png" alt="">
                                     </div>
-                                    <div>
+                                    <div class="div-fulano-children ">
                                         <h3>Fulano</h3>
                                         <p>Funcionario</p>
                                     </div>
@@ -294,11 +297,11 @@
                             <div class="item">
                             <div class="">
                                 <p> Lorem Ipsum is simply typesetting industry. Lorem Ipsum </p> 
-                                <div>
+                                <div class="div-fulano">
                                     <div>
                                         <img src="./img/ipessoas.png" alt="">
                                     </div>
-                                    <div>
+                                    <div class="div-fulano-children ">
                                         <h3>Fulano</h3>
                                         <p>Funcionario</p>
                                     </div>
@@ -308,11 +311,11 @@
                             <div class="item">
                             <div class="">
                                 <p> Lorem Ipsum is simply typesetting industry. Lorem Ipsum </p> 
-                                <div>
+                                <div class="div-fulano">
                                     <div>
                                         <img src="./img/ipessoas.png" alt="">
                                     </div>
-                                    <div>
+                                    <div class="div-fulano-children ">
                                         <h3>Fulano</h3>
                                         <p>Funcionario</p>
                                     </div>
@@ -327,7 +330,25 @@
         </main> 
         <!-- ==============================foooter================================== -->
         <footer>
+
+            <div class="container  divTextMobile ">
+                <div class="containerMobile">
+                     <h3 class="celular-titulo">
+                     Este protótipo foi desenvolvido por João Otavio de Almeida mesquita
+                    </h3>
+                     <p class="text-left celular-paragrafo">
+                        Lorem Ipsum is simply typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen
+                     </p>  
+                     <div>
+                        <img src="./img/Grupo 15.png" alt="">
+                        <span>Show</span>
+                    </div>
+                </div>
+                </div>
          <div class="div-footer">
+            
              <div class="d-flex container div-filho-footer">
                     <div class="div-celular ">
                     </div>
@@ -341,11 +362,11 @@
                                     Lorem Ipsum is simply typesetting industry. Lorem Ipsum has been the industry's
                                     standard dummy text ever since the 1500s, when an unknown
                                     printer took a galley of type and scrambled it to make a type specimen
+                                    <div class="container emojidiv">
+                                       <img src="./img/Grupo 15.png" alt="">
+                                       <span>Show</span>
+                                   </div>
                                  </p>  
-                                 <div>
-                                    <img src="./img/Grupo 15.png" alt="">
-                                    <span>Show</span>
-                                </div>
                             </div>
                             </div>
                         </div>     
