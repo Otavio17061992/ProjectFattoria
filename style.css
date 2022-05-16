@@ -50,6 +50,12 @@ header, .navbar {
     background-color: var(--body-color);
 }
 
+header .navbar-light .navbar-brand {
+    color: var(--prime-color);
+    font-weight: 900;
+    font-size: 28px;
+}
+
 .container {
     padding-top: 0;
     padding-bottom: 0;
@@ -99,7 +105,7 @@ body .banner  {
 .div-singlo-img {
     position: absolute;
     top: 278px;
-    left: 15%;
+    left: 10vw;
 }
 
 
@@ -173,7 +179,14 @@ main .container-servicos1{
 
 /* foooter */
 
-
+.div-conteudo {
+    position: relative;
+    margin-left: 440px;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-top: 94px;
+}
 
 
 .div-celular {
@@ -227,6 +240,17 @@ footer {
 }
 
 
+header .navbar-light .navbar-toggler {
+    color: #232323;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+header .navbar-light .navbar-toggler span{
+    color: #232323;
+    padding: 21px;
+}
+
+
 /* media */
 
 
@@ -251,6 +275,7 @@ footer {
     .container-mobile {
         display: none;
     }
+   
 }
 
 @media (max-width: 950px) {
